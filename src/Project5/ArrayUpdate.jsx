@@ -3,27 +3,25 @@ import React from "react";
 import { useState } from "react";
 
 export default function AppProject5() {
-  const Data = [
-    { name: "Roqaya", place: "aaaa" },
-    { name: "Roqaya", place: "bbbb" },
+  const Date = [
+    { name: "Roqaya", age: "25" },
+    { name: "Roqaya", age: "25" },
   ];
-  const [text, setTaxt] = useState(Data);
-  const updeatData = () => {
-    setTaxt([
-      { name: "Ameer", place: "aaaa" },
-      { name: "Ameer", place: "bbbb" },
+  const [text, setText] = useState(Date);
+  const updeat = () => {
+    setText([
+      { name: "Ameer", age: "25" },
+      { name: "Ameer", age: "25" },
     ]);
   };
   return (
     <>
       {text.map((value) => {
-        return (
-          <>
-            <h2>{value.name}</h2>
-          </>
-        );
+        return(<>
+        <h1>{value.name}</h1>
+        </>)
       })}
-      <button onClick={updeatData}>click me</button>
+      <button onClick={updeat}>click</button>
     </>
   );
 }
