@@ -7,7 +7,10 @@ import Apianther from "./ProjectApi/Apianther";
 import Axioce from "./ProjextAxioc/Axioce";
 import AxiocPost from "./ProjextAxioc/AxiocPost";
 import Axioc_acync_aeait from "./ProjextAxioc/Axioc_acync_aeait";
-
+import Api_Project from "./ReactProjectApi/Api_Project";
+import Router_Dom from "./React_Router_Dom/Router_Dom";
+import { ReactDOM } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import AppProject3 from "./Project3/AppProject3";
 // import AppProject4 from "./Project4/AppProject4";
 // import AppProject5 from "./Project5/ArrayUpdate";
@@ -33,7 +36,13 @@ function App() {
       {/* <Apianther/> */}
       {/* <Axioce/> */}
       {/* <AxiocPost/> */}
-      <Axioc_acync_aeait/>
+      {/* <Axioc_acync_aeait/> */}
+      {/* <Api_Project/> */}
+
+      <BrowserRouter>
+        <Router_Dom />
+      </BrowserRouter>
+      
     </>
   );
 }
